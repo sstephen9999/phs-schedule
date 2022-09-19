@@ -4,6 +4,7 @@ import db from "../firebase/db";
 import { getDoc, doc } from "firebase/firestore";
 import { getDateEST, convertToMilitaryTime, getDate } from "../utils/time";
 import calendar from "../calendar.json";
+export const prerender = true;
 
 interface Schedule {
   [period: string]: {
